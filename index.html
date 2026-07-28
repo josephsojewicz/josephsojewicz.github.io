@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseph Sojewicz — Analyst & Researcher</title>
+  <title>Joseph Sojewicz — Analyst &amp; Researcher</title>
   <meta name="description" content="Intelligence analysis, geopolitical risk assessment, and policy research. MA International Relations (KCL, Distinction).">
 
   <!-- Fonts: Spectral (editorial serif) + IBM Plex Mono (technical) -->
@@ -13,16 +13,12 @@
   <style>
     /* -------------------------------------------------------
        DESIGN LANGUAGE:
-       Editorial/analytical — like the inside pages of a policy
-       journal. Dark navy background. Off-white serif text.
-       Red accent for emphasis. Mono for metadata/labels.
-       This is deliberately serious-feeling — it fits the field.
+       Dark navy background, off-white serif, red accent, mono labels.
     ------------------------------------------------------- */
 
     :root {
       --navy:       #0d1b2a;
       --navy-light: #1a2d42;
-      --navy-mid:   #243b55;
       --cream:      #f0ebe0;
       --cream-dim:  #b8b0a0;
       --red:        #c0392b;
@@ -109,6 +105,10 @@
 
     .nav-links a:hover { color: var(--cream); }
     .nav-links a:hover::after { width: 100%; }
+
+    .nav-links a.nav-highlight {
+      color: var(--cream);
+    }
 
 
     /* ================================================
@@ -233,7 +233,6 @@
       color: var(--cream);
     }
 
-    /* Vertical rule decorating the hero */
     .hero-rule {
       position: absolute;
       right: 3rem; top: 20%; bottom: 20%;
@@ -333,7 +332,6 @@
     .tag-r      { background: rgba(41, 128, 185, 0.15); color: #5dade2; }
     .tag-python { background: rgba(39, 174, 96, 0.15);  color: #58d68d; }
     .tag-data   { background: rgba(192, 57, 43, 0.15);  color: #e74c3c; }
-    .tag-web    { background: rgba(142, 68, 173, 0.15); color: #a569bd; }
 
     .project-status {
       font-family: var(--mono);
@@ -599,7 +597,6 @@
       margin-top: 1rem;
     }
 
-    /* Background texture — very subtle noise */
     body::before {
       content: '';
       position: fixed;
@@ -649,6 +646,7 @@
   <nav>
     <a href="#top" class="nav-name">Joseph Sojewicz</a>
     <ul class="nav-links">
+      <li><a href="reports.html" class="nav-highlight">Reports &amp; Briefs</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#writing">Writing</a></li>
       <li><a href="#about">About</a></li>
@@ -673,20 +671,18 @@
       Analyst specializing in geopolitical risk, policy analysis, and data-driven insights — 
       through empirical research, quantitative methods, and primary-source analysis. I translate
       complex information into clear, actionable intelligence that supports decision-making.
-      
     </p>
 
     <div class="hero-credentials">
       <span class="credential-tag"><strong>MA</strong> International Relations (War Studies and Security) · King's College London · Distinction</span>
-      <span class="credential-tag"><strong>BA</strong> International Relations · Maxwell School of Citizenship and Public Affiars, Syracuse University · 3.8 GPA · Summa Cum Laude</span>
-      <span class="credential-tag"><strong>Focus</strong> Geopolitical Risk Analysis · Qualitative & Quantitative Research · Strategic Forecasting</span>
+      <span class="credential-tag"><strong>BA</strong> International Relations · Maxwell School of Citizenship and Public Affairs, Syracuse University · 3.8 GPA · Summa Cum Laude</span>
+      <span class="credential-tag"><strong>Focus</strong> Geopolitical Risk Analysis · Qualitative &amp; Quantitative Research · Strategic Forecasting</span>
     </div>
 
     <div class="hero-links">
-      <a href="#projects" class="btn btn-primary">View projects</a>
-      <a href="#writing" class="btn btn-outline">Read my work</a>
-      <a href="resume.pdf.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
-      
+      <a href="reports.html" class="btn btn-primary">Reports &amp; Briefs</a>
+      <a href="#projects" class="btn btn-outline">View projects</a>
+      <a href="resume.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
     </div>
 
     <div class="hero-rule"></div>
@@ -710,7 +706,7 @@
           <span class="project-tag tag-r">R</span>
           <span class="project-tag tag-r">Shiny</span>
           <span class="project-tag tag-data">ACLED</span>
-          <span class="project-status building">Complete</span>
+          <span class="project-status live">Complete</span>
         </div>
         <h3>ACLED Conflict Event Dashboard</h3>
         <p class="project-description">
@@ -727,16 +723,11 @@
           <li>Exportable data tables</li>
         </ul>
         <div class="project-links">
-          <!--
-            When deployed, replace # with your links:
-            <a href="https://yourapp.shinyapps.io/acled" class="project-link" target="_blank">Live app →</a>
-          -->
           <a href="https://josephsojewicz.shinyapps.io/Projects/" class="project-link" target="_blank">Live Dashboard →</a>
-          <a href="https://josephsojewicz.shinyapps.io/Projects/" class="project-link disabled">Live app (coming soon)</a>
         </div>
       </div>
 
-      <!-- Project 2: OFAC (placeholder — build next) -->
+      <!-- Project 2: OFAC -->
       <div class="project-card">
         <div class="project-meta">
           <span class="project-tag tag-python">Python</span>
@@ -758,7 +749,7 @@
           <li>Designation timeline analysis</li>
         </ul>
         <div class="project-links">
-          <a href="https://github.com/YOURUSERNAME/ofac-tracker" class="project-link disabled">Live Tracker (coming soon)</a>
+          <a href="https://github.com/josephsojewicz/ofac-tracker" class="project-link disabled">Live Tracker (coming soon)</a>
         </div>
       </div>
 
@@ -767,7 +758,7 @@
 
 
   <!-- ================================================
-       WRITING (Dissertation + Capstone + future work)
+       WRITING
   ================================================ -->
   <section id="writing">
     <div class="section-header fade-up">
@@ -777,10 +768,7 @@
 
     <div class="writing-list fade-up">
 
-      <!--
-        DISSERTATION — update title, date, and PDF link
-      -->
-      <a class="writing-link" href="dissertation.pdf.pdf" target="_blank">
+      <a class="writing-link" href="dissertation.pdf" target="_blank">
         <div class="writing-item">
           <div class="writing-date">2025</div>
           <div>
@@ -792,10 +780,7 @@
         </div>
       </a>
 
-      <!--
-        CAPSTONE — update title, date, and PDF link
-      -->
-      <a class="writing-link" href="capstone.pdf.pdf" target="_blank">
+      <a class="writing-link" href="capstone.pdf" target="_blank">
         <div class="writing-item">
           <div class="writing-date">2024</div>
           <div>
@@ -806,20 +791,6 @@
           </div>
         </div>
       </a>
-
-      <!--
-        Add additional pieces below as you publish them:
-
-      <a class="writing-link" href="your-article.pdf" target="_blank">
-        <div class="writing-item">
-          <div class="writing-date">2025</div>
-          <div>
-            <div class="writing-title">Article or policy brief title</div>
-            <div class="writing-venue">Publication name</div>
-          </div>
-        </div>
-      </a>
-      -->
 
     </div>
   </section>
@@ -843,13 +814,6 @@
           to ask questions that matter.
         </p>
         <p>
-          <!--
-            Add 1–2 sentences about your dissertation focus, 
-            regional expertise, or a research interest.
-            Example: "My dissertation examined how secondary sanctions affect
-            third-party compliance, using trade flow data to test
-            whether financial pressure produces behavioral change."
-          -->
           I examine how force, coercion, and strategic interaction shape the 
           international order, using empirical and quantitative methods alongside
           primary-source analysis to uncover patterns of conflict and risk.
@@ -864,11 +828,11 @@
           <div class="skills-label">Methods</div>
           <div class="skills-row">
             <span class="skill-chip">Geopolitical Risk Analysis</span>
-            <span class="skill-chip">Policy Analysis & Evaluation</span>
+            <span class="skill-chip">Policy Analysis &amp; Evaluation</span>
             <span class="skill-chip">OSINT</span>
             <span class="skill-chip">Political Economy</span>
             <span class="skill-chip">Document Analysis</span>
-            <span class="skill-chip">Strategic Forecasting & Threat Assessment</span>
+            <span class="skill-chip">Strategic Forecasting &amp; Threat Assessment</span>
           </div>
 
           <div class="skills-label">Tools</div>
@@ -884,8 +848,10 @@
           <div class="skills-label">Languages</div>
           <div class="skills-row">
             <span class="skill-chip">English (native)</span>
-      </div><span class="skill-chip">Spanish (beginner-intermediate)</span>
-      </div><span class="skill-chip">Mandarin Chinese (begeinner)</span>
+            <span class="skill-chip">Spanish (beginner-intermediate)</span>
+            <span class="skill-chip">Mandarin Chinese (beginner)</span>
+          </div>
+        </div>
       </div>
 
       <div>
@@ -898,13 +864,8 @@
         <div class="education-item">
           <div class="edu-degree">BA International Relations</div>
           <div class="edu-institution">Maxwell School · Syracuse University</div>
-          <div class="edu-detail">Summa Cum Laude · Chancelor's Scholarship · Say Yes Scholarship · GPA 3.8 · Class of 2024</div>
+          <div class="edu-detail">Summa Cum Laude · Chancellor's Scholarship · Say Yes Scholarship · GPA 3.8 · Class of 2024</div>
         </div>
-
-        <!--
-          Add relevant modules, thesis advisors, or awards here if useful.
-          Keep it concise — save detail for the CV.
-        -->
       </div>
     </div>
   </section>
@@ -915,22 +876,12 @@
   ================================================ -->
   <footer id="contact">
     <div class="footer-contact">
-      <!--
-        Replace with your actual email and LinkedIn:
-      -->
       <a href="mailto:joeysojewicz@gmail.com">joeysojewicz@gmail.com</a>
     </div>
 
     <div class="footer-links">
-      <!--
-        Replace YOURUSERNAME with your GitHub handle:
-      -->
       <a href="https://github.com/josephsojewicz" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/joseph-e-sojewicz-39749b2a7/" target="_blank">LinkedIn</a>
-      <!--
-        If you want a downloadable CV:
-        <a href="cv-joseph-sojewicz.pdf" target="_blank">CV</a>
-      -->
     </div>
 
     <div class="footer-copy">
@@ -943,18 +894,16 @@
        SCROLL ANIMATION SCRIPT
   ================================================ -->
   <script>
-    // IntersectionObserver watches elements as they enter the viewport
-    // and adds the "visible" class, triggering the CSS fade-up animation.
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Only animate once
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 }  // Trigger when 10% of the element is visible
+      { threshold: 0.1 }
     );
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
